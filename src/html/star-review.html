@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    
+    
+    .rating {
+        font-size: 50px;
+        display: flex;
+        flex-direction: row-reverse;    
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rating-star {
+        /* position: relative; */
+    }
+
+
+    .rating-star::before {
+        content: "\2605";  /*实星代码*/
+        /* position:absolute; */
+        color: #ddd;
+        left: 0;
+    }
+
+
+
+
+
+    .rating .rating-star.current::before,
+    .rating .rating-star.current ~ .rating-star::before {
+        color: red;
+    }
+    
+    
+    </style>
+
+
+</head>
+<body>
+
+    <div class="rating">
+        <span class="rating-star"></span>
+        <span class="rating-star current"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+        <span class="rating-star"></span>
+    </div>
+
+    <script>
+        var rating=document.querySelectorAll('.rating .rating-star');
+        var len = rating.length;  //span长度
+        for(var i=0; i < len; i++){
+            rating[i].onclick=function () {
+
+                for(var j=0; j<len; j++) {
+                    rating[j].classList.remove("current");
+                }
+                this.classList.add("current");
+            }
+        }
+
+
+    </script>
+
+
+    
+</body>
+</html>

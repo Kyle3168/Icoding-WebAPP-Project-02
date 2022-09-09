@@ -1,0 +1,604 @@
+        /* head start */
+        .head{
+            width: 100%;
+            /* height: 44px; */
+            background-color: #0eb6ff;
+            padding: 7px 0px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 666;
+        }
+
+        .head a.position {
+            display: block;
+            width: 43px;
+            height: 30px;
+            /* background-color: red; */
+            float: left;
+            color: #fff;
+            font-size: 21px;
+            padding-left: 10px;
+        }
+
+        .head .search {
+            margin: 0 43px;
+            height: 30px;
+            /* background-color: pink; */
+            position: relative;
+            
+        }
+
+        .head a.wechat {
+            display: block;
+            width: 43px;
+            height: 30px;
+            /* background-color: tomato; */
+            float: right;
+            color: #fff;
+            font-size: 21px;
+            padding-left: 12px;
+        }
+
+        .search input {
+            width: 100%;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 15px;
+            padding-left: 35px;
+        }
+
+
+        .search .icon-search {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            /* background-color: red; */
+            font-size: 13px;
+            left: 12px;
+            top: 6px;
+
+        }
+
+        .search input::placeholder {
+            color: #9d939d;
+        }
+        /* end head */
+
+
+
+
+
+         /* menu start */
+       .menu {
+        padding: 44px 10px 17px;
+       }
+
+       .menu ul li {
+        width: 20%;
+        float: left;
+        padding: 0px 9px;
+        margin-top: 16px;
+        
+        
+       }
+
+       .menu .menu-item-icon {
+        background-color: pink;
+        padding-bottom: 100%;  /*element's width and height scale and shrink at the same rate*/
+        position: relative;
+        border-radius: 50%;
+       }
+
+       .menu .menu-item-icon::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);  /* 移动自身的水平和垂直的一半 */
+            color: #fff;
+            font-size: 35px;
+       }
+
+
+       .menu .menu-item-title {
+        text-align: center;
+        padding-top: 10px;
+        line-height: 1;
+       }
+       
+
+       .menu .icon-shucai {
+        background-color: #c0e570;
+       }
+
+       .menu .icon-qinlei{
+        background-color: #f1d0bb;
+       }
+
+       .menu .icon-yu {
+        background-color: #b4deff;
+       }
+
+       .menu .icon-lengdongshipin {
+        background-color: #7eb0d6;
+       }
+
+       .menu .icon-mimian {
+        background-color: #e4b55f;
+       }
+
+       .menu .icon-dazhe {
+        background-color: #63c5cc;
+       }
+
+       .menu .icon-xuegao {
+        background-color: #a99aeb;
+       }
+
+       .menu .icon-lingshi {
+        background-color: #eea982;
+       }
+
+
+       .menu .icon-yinliao {
+        background-color: #6bcc7b;
+       }
+
+       .menu .icon-yijia {
+        background-color: #57bde6;
+       }
+
+
+       /* end menu */
+
+
+
+       /* main start */
+               .main {
+                padding: 0px 11px 50px;
+                
+            }
+    
+            .cheap .cheap-title {
+                background-color: #ffff;
+                border-radius: 5px;
+                line-height: 1;
+                padding: 15px 16px 14px 12px;
+            }
+    
+    
+            .cheap .cheap-title span {
+                font-size: 14px;
+                font-weight: bold;
+                float: left;
+               
+                
+            }
+    
+            .cheap .cheap-title a {
+                float: right;
+                position: relative;
+                top: -1px;
+                font-size: 12px;
+            }
+    
+            .icon-xiangyoujiantou:before {
+                content: "";
+            }
+    
+            .icon-xiangyoujiantou:after {
+                content: "\e65f";
+                font-size: 14px;
+                margin-left: 5px;
+            }
+    
+            /* 33.89% 
+                33.89%
+                32.20%
+            */
+    
+            .cheap .cheap-content ul li:nth-child(1),
+            .cheap .cheap-content ul li:nth-child(2) {
+                width: 33.89%;
+                /* background-color: skyblue; */
+                /* height: 100px; */
+                padding: 0px 16px 0px 10px;
+               
+    
+            }
+    
+            .main .cheap-content ul li:nth-child(3) {
+                width: 32.20%;
+                /* background-color: pink; */
+                /* height: 100px; */
+                padding: 0px 10px 0px 10px ;
+            }
+    
+            .main .cheap-content ul li {
+                float: left;
+            }
+    
+        .main .cheap-content ul li img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    
+        .main .cheap-content ul li a.img {
+            display: block;
+            /* background-color: red; */
+            padding-bottom: 86.17%;  /*高 / 宽 81px/94px   */
+            position: relative;
+        }
+    
+    
+        .main .cheap-content ul li img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+    
+        }
+    
+        /* 文字超出部分隐藏 */
+        .main .cheap-content ul li .title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-top: 7px;
+            padding-bottom: 4px;
+        }
+    
+    
+        .main .cheap-content ul li .price {
+            /* background-color: pink; */
+            margin-top: 6px;
+            position: relative;
+            
+        }
+    
+        .main .cheap-content ul li .price span {
+            color: #CE5F41;
+        }
+    
+        .main .cheap-content ul li .price i {
+            font-style: normal;
+        }
+    
+        .main .cheap-content ul li .price .add {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            background-color: #0eb6ff;
+            color: #fff;
+            text-align: center;
+            line-height: 22px; 
+            border-radius: 50%;
+            right: -4px;
+            top: -4px;
+        }
+    
+        /* end main */
+
+
+
+        /* recommended products start */
+        .recommend {
+            padding-top: 10px;
+            
+        }
+
+
+        .recommend .recommend-left,
+        .recommend .recommend-right {
+            width: 50%;
+            float: left;
+        }
+
+        .recommend .recommend-left {
+            padding-right: 5px;
+        }
+        
+        .recommend .recommend-right {
+            padding-left: 4px;
+        }
+
+        .recommend .recommend-content {
+            background-color: #ffff;
+            padding-bottom: 12px;
+            border-radius: 5px;
+
+        }
+
+
+        .recommend .recommend-content .recommend-title {
+            font-size: 14px;
+            font-weight: bold;
+            padding: 12px 0px 6px 13px;
+           
+        }
+
+        .recommend .recommend-content .recommend-description {
+            color: #9d939d;
+            padding: 0px 0px 4px 12px;
+        }
+
+
+        .recommend .recommend-content ul li {
+            width: 50%;
+            float: left;
+        }
+
+
+        .recommend .recommend-content ul li:nth-child(1) {
+            padding-left: 14px;
+            padding-right: 11px;
+        }
+
+        .recommend .recommend-content ul li:nth-child(2) {
+            padding-left: 10px;
+            padding-right: 15px;
+        }
+
+
+        .recommend-content ul li a {
+            display: block;
+            padding-bottom: 100%;
+            /* background-color: red; */
+            position: relative;
+        }
+
+        .recommend-content ul li a img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* end recommended products */
+
+
+
+
+
+
+
+         /* product category start */
+        /* 63 width  / 353  = 17.84% */
+
+        .product-category ul.tab {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 12px;
+        }
+
+        .product-category {
+            padding-top: 19px;
+        }
+
+        .product-category ul.tab li {
+           width: 17.84%;
+           /* background-color: skyblue; */
+           padding-bottom: 11px;
+          
+        }
+
+    
+        .product-category ul.tab li span {
+            display: block;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .product-category ul.tab li i {
+            display: block;
+            /* width: 100%; */
+            height: 17px;
+            line-height: 17px;
+            text-align: center;
+            color: #9d9e9d;
+            font-style: normal;
+            border-radius: 9px;
+
+        }
+
+        .product-category ul.tab li.active span {
+            color: #0eb6ff;
+        }
+
+        .product-category ul.tab li.active i {
+            background-color: #0eb6ff;
+            color: #fff;
+            
+        }
+
+        .product-category .tab-content ul li {
+            background-color: #fff;
+            margin-bottom: 10px;
+            border-radius: 5px;
+           
+            
+        }
+
+
+        .product-category .tab-content ul li .img {
+            width: 29.17%;
+            float: left;
+            padding-left: 9px;
+
+        }
+
+        .product-category .tab-content ul li .img img {
+            width: 100%;
+            margin-top: 23px;
+            border-radius: 8px;
+        }
+
+
+        .product-category .tab-content ul li .info {
+            width: 70.38%;
+            float: right;
+            padding-left: 13px;
+        }
+
+
+        .tab-content .info .info-title {
+            font-size: 14px;
+            height: 42px;
+            padding-top: 12px;
+            
+        }
+
+        .tab-content .info .info-label {
+            font-size: 0;
+        }
+
+
+        .tab-content .info .info-label span {
+            display: inline-block;
+            width: 32px;
+            height: 20px;
+            text-align: center;
+            line-height: 18px;
+            color: #ce5f41;
+            border-radius: 4px;
+            border: 1px solid #ce5f41 ;
+            font-size: 12px;
+        }
+
+        .tab-content .info .info-label i {
+            width: 60px;
+            height: 20px;
+            color: #9d9e9d;
+            text-align: center;
+            line-height: 18px;
+            border: 1px solid #9d9e9d;
+            margin-left: 5px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+
+
+        .tab-content .info-price span {
+            color: #ce5f41;
+        }
+
+        .tab-content .info-price {
+            position: relative;
+            padding-top: 7px;
+        }
+
+
+        .tab-content .info-price .add {
+    
+            width: 22px;
+            height: 22px;
+            background-color: #0eb6ff;
+            color: #fff;
+            text-align: center;
+            line-height: 22px;
+            border-radius: 50%;
+            font-size: 14px;
+            position: absolute;
+            right: 14px;
+            top: -5px;
+            
+        }
+
+
+        .tab-content .info-number {
+            color: #9d9e9d;
+            padding: 5px 0px 0px 0px;
+        }
+
+        /* end product category */
+
+
+
+
+
+
+         /* footer-nav start */
+         .tabbar{
+            width: 100%;
+            height: 50px;
+            background-color: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 222;
+            /* 以下两行代码 + viewport-fit=cover 针对ios设备底部有间距的解决方法 */
+            box-sizing: content-box;
+            padding-bottom: env(safe-area-inset-bottom);
+
+        }
+
+ 
+
+        .tabbar ul li {
+            width: 25%;
+            float: left;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .tabbar ul li span {
+            display: block;
+            font-size: 21px;
+            line-height: 1;
+        }
+
+        .tabbar ul li i {
+            display: block;
+            color: #9d9d9d;
+        }
+
+        .tabbar ul li a:hover span.iconfont,
+        .tabbar ul li a:hover i {
+            color: rgb(31, 29, 29);
+        }
+
+
+    /* end footer-nav */
+   
+
+
+
+
+
+        /* media query start*/
+
+        @media screen and (min-width: 500px) {
+            .menu .menu-item-title {
+                font-size: 16px;
+            }
+            .menu .menu-item-icon::before {
+                font-size: 45px;
+            }
+    
+            .main .cheap-content ul li .title {
+                font-size: 14px;
+            }
+    
+            .main .cheap-content ul li .price {
+                font-size: 14px;
+            }
+            .main .cheap-content ul li .price .add {
+                font-size: 28px;
+            }
+            .recommend .recommend-content .recommend-title {
+                font-size: 16px;  
+            }
+    
+            .recommend .recommend-content .recommend-description {
+                font-size: 14px;
+            }
+    
+            .tab-content .info .info-title {
+                font-size: 18px;
+            }
+        }
+
+        /* end media query */

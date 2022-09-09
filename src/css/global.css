@@ -1,0 +1,51 @@
+* {
+    /* 怪异盒子模型 */
+    box-sizing: border-box;
+}
+
+body{
+    /* 页面通用字体 12px / 行高是字体的1.5 倍  / 页面采用的默认字体 微软雅黑*/
+    font: 12px/1.5 Microsoft YaHei;
+    color: #101010;
+    background-color: #f5f5f5;
+}
+
+html,body {
+    margin: 0;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #101010;
+}
+
+img{
+    /* 避免图片底下有间隙 */
+    vertical-align: top;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+i {
+    font-style: normal;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+
+}
+

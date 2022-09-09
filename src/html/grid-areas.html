@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid-container{
+            border: 1px solid #000;
+            display: inline-grid;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(3, 100px);
+            margin: 200px;
+            grid-template-areas: 
+                "a a g"
+                "a a f"
+                "c c c"
+            ;
+        }
+
+        .item1 {
+            grid-area: a;
+            background-color: pink;
+        }
+
+        .item2 {
+            grid-area: c;
+            background-color: skyblue;
+        }
+
+        .item3 {
+            grid-area: f;
+            background-color: tomato;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item">4</div>
+
+ 
+    </div>
+
+
+    
+</body>
+</html>
